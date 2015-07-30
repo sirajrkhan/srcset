@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Siraj Khan">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Siraj Khan">
+	<title>Using SRC-SET</title>
+</head>
 
-    <title>Using SRC-SET</title>
+<body>
+	
+<img src="small.jpg" srcset="medium.jpg 1x, largest.jpg 2x" alt="Dad and Dude!">
 
-  </head>
-
-  <body>
-  <img src="mobile_image.jpg" srcset="tablet_image.jpg 1000w, desktop_image.jpg 2000w" alt="images as needed">
-  
 <script>
 (function(){
-  if('querySelector' in document
-     && 'localStorage' in window
-     && 'addEventListener' in window) {
-    // Conditions for your HTML5 Application
-    console.log('HTML5 supported');
-	document.getElementById("msg").innerHTML = "HTML5 supported in your Browser";
-  } else {
-    //Start pouring Polyfills
-    console.log('HTML5 NOT supported');
-  }
+	if('querySelector' in document
+	&& 'localStorage' in window
+	&& 'addEventListener' in window) {
+		// Conditions for your HTML5 Application
+		console.log('HTML5 supported');
+	} else {
+		//Start pouring Polyfills
+		console.log('HTML5 NOT supported');
+	}
 })();
 </script>
-  </body>
+</body>
 </html>
