@@ -6,12 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Siraj Khan">
 	<title>Using SRC-SET</title>
+	<style>
+		.container {width:100%;height:auto}
+	</style>
 </head>
 
 <body> 
-	
-<img src="small.jpg" srcset="medium.jpg 700w, largest.jpg 1000w" alt="Dad and Dude!">
-
+<div class="container">	
+	<img src="small.jpg" srcset="medium.jpg 700w, largest.jpg 1000w" alt="Dad and Dude!">
+</div>
 <script>
 (function(){
 	if('querySelector' in document
